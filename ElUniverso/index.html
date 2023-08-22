@@ -18,8 +18,8 @@
             <!--columna1-->
             <div>
                 <!--menu y barra de busqueda-->
-                <div class="grid2 header1 centrar">
-                    <button class="boton">
+                <div class="grid2 header1 centrar" >
+                    <button class="boton" tabindex="3">
                         <i class="fa-solid fa-bars" style="color: var(--white_text);"></i>
                         Menu
                     </button>
@@ -29,23 +29,23 @@
                             <i class="fa-solid fa-magnifying-glass" style="color: var(--text);"></i>
                         </div>
                         <div class="centrar">
-                            <input class="input_lupa" type="text">
+                            <input class="input_lupa" type="text" tabindex="3" aria-label="barra de busqueda" >
                         </div>
                     </div>
 
                 </div>
                 <!--cambiar tamaño de fuente-->
                 <div class="contenido_inline centrar header2">
-                    <p class="letra_gris ml-1">
-                        Fuente:
+                    <p class="letra_gris ml-1" tabindex="7">
+                        Tamaño de Fuente:
                     </p>
-                    <button id="botonDisminuir" class="boton_fuente ml-1">
+                    <button tabindex="8" id="botonDisminuir" class="boton_fuente ml-1" aria-label="disminuir tamaño de fuente">
                         <i class="fa-solid fa-minus" style="color: #000000;"></i>
                     </button>
                     <div class="cuadrado ml-1 centrar">
                         A
                     </div>
-                    <button id="botonAumentar" class="boton_fuente ml-1 centrar">
+                    <button tabindex="9" id="botonAumentar" class="boton_fuente ml-1 centrar" aria-label="aumentar tamaño de fuente">
                         <i class="fa-solid fa-plus" style="color: #000000;"></i>
                     </button>
 
@@ -55,10 +55,10 @@
             <div>
                 <!--titulo-->
                 <div class="header1 contenido_block centrar_texto">
-                    <h1 class="titulo1 pt-1">
+                    <h1 class="titulo1 pt-1" tabindex="1">
                         EL UNIVERSO
                     </h1>
-                    <h2 class="subtitulo">
+                    <h2 class="subtitulo" tabindex="2">  
                         El Mayor Diario Nacional
                     </h2>
                 </div>
@@ -67,10 +67,10 @@
                     <p class="letra_gris ml-2">
                         Edición:
                     </p>
-                    <a href="" class="enlace_header ml-1">
+                    <a tabindex="10" href="" class="enlace_header ml-1" aria-label="cambiar a la edición de Guayaquil">
                         Guayaquil
                     </a>
-                    <a href="" class="enlace_header ml-1">
+                    <a tabindex="11" href="" class="enlace_header ml-1" aria-label="cambiar a la edición de Quito">
                         Quito
                     </a>
 
@@ -81,11 +81,11 @@
             <div>
                 <!--Inicio de sesion y registro-->
                 <div class="grid_mitad header1 centrar">
-                    <button class="boton grid2 centrar boton_iniciar_sesion">
+                    <button tabindex="4" class="boton grid2 centrar boton_iniciar_sesion">
                         <i class="fa-solid fa-user" style="color: var(--white_text);"></i>
                         <div class="ml-2">Iniciar Sesion</div>
                     </button>
-                    <button class="boton">
+                    <button tabindex="5" class="boton">
                         Registrarse
                     </button>
                 </div>
@@ -94,7 +94,7 @@
                     <p>Modo:</p>
                     <!--slider-->
                     <label class="switch ml-2">
-                        <input type="checkbox" id="slider" checked>
+                        <input tabindex="12" type="checkbox" id="slider" class="theme-toggle" checked aria-label="Cambiar entre Modo Oscuro y Modo Claro">
                         <span class="slider"></span>
                     </label>
                 </div>
