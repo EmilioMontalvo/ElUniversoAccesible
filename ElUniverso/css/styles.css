@@ -35,6 +35,7 @@
 
 :root {
     --altura: 2.1875rem;
+    --text-size: 1rem;
 
 }
 
@@ -45,6 +46,8 @@ body {
     background: var(--background);
     font-family: 'Times New Roman', Times, serif;
     margin: 0px;
+    font-size: var(--text-size);
+
 }
 
 
