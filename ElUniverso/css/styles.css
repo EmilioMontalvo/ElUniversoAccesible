@@ -50,6 +50,10 @@ body {
 
 }
 
+i{
+    font-size: 1rem
+}
+
 
 .titulo1 {
     color: var(--text);
@@ -68,6 +72,7 @@ body {
     margin: 0px;
     padding: 0px;
     display: block;
+    font-size: 2rem;
 }
 
 
@@ -179,6 +184,7 @@ body {
     border: 1px solid var(--borde);
     box-sizing: border-box;
     padding: 0px;
+    font-size: var(--text-size);
 }
 
 .boton_fuente {
@@ -190,7 +196,7 @@ body {
 }
 
 .boton_iniciar_sesion {
-    width: 7.7rem;
+    width: 8.5rem;
 }
 
 
@@ -302,10 +308,6 @@ body {
 
 
 }
-
-
-
-
 
 
 
