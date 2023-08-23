@@ -286,6 +286,10 @@ a:hover{
     padding-right: 1.5rem;
 }
 
+.pl-1 {
+    padding-right: 1.5rem;
+}
+
 .mt-1{
     margin-top: 2rem;
 }
@@ -299,10 +303,6 @@ a:hover{
     width: 1.75rem;
     height: 1.75rem;
     border: 1px solid var(--borde);
-    color: var(--text);
-}
-
-.modo * {
     color: var(--text);
 }
 
