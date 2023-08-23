@@ -311,11 +311,12 @@ a:hover{
 
 .body{
     display: grid;
-    grid-template-columns: 57fr 25fr;
+    grid-template-columns: 60rem 27rem;
     color: var(--text);
-    padding-right: 5rem;
-    padding-left: 5rem;
-   
+    padding-right: 2.75rem;
+    padding-left: 2.75rem;
+    padding-bottom: 2.75rem;
+     
 
 }
 
@@ -325,6 +326,10 @@ a:hover{
 
 .body a{
     text-align: justify;
+}
+
+.borde_inferior{
+    border-bottom: 1px dashed var(--borde);
 }
 
 
@@ -365,11 +370,17 @@ a:hover{
 
 .noticiaNueva{
     display: flex;
+    padding-bottom: 1rem;
 }
 
 .noticiaNueva img{
     width: 8.0625rem;
     height: 6.125rem;
+    
+}
+
+.noticiaNueva>div{
+   margin-left: 0.5rem;
     
 }
 
