@@ -144,6 +144,11 @@ a:hover{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.grid5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
 .grid_mitad {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -294,6 +299,11 @@ a:hover{
     padding-right: 1.5rem;
 }
 
+.pr-0 {
+    padding-right: 0.5rem;
+}
+
+
 .pl-1 {
     padding-right: 1.5rem;
 }
@@ -317,15 +327,18 @@ a:hover{
 
 /* Estilos de las noticias */
 
-.body{
+.body{    
+    padding-right: 2.75rem;
+    padding-left: 2.75rem;  
+     
+
+}
+
+.body_noticias{
     display: grid;
     grid-template-columns: 60rem 27rem;
     color: var(--text);
-    padding-right: 2.75rem;
-    padding-left: 2.75rem;
     padding-bottom: 2.75rem;
-     
-
 }
 
 .body img{
@@ -410,6 +423,33 @@ a:hover{
     top: 40%; /* Ajusta la posición vertical */
     left: -8.85%;
 }
+
+.miniatura_video {
+    position: relative;
+    display: inline-block;
+  }
+
+  .miniatura_video i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .miniatura_video img {
+    width: 27.3125rem;
+    height: 15.4375rem;
+    display: block;
+  }
+
+  .light{
+    font-weight: lighter;
+  }
 
 
 
