@@ -263,6 +263,10 @@ a:hover{
     width: 8.5rem;
 }
 
+.boton_suscribete{
+    width: 16.5rem;
+}
+
 
 
 .ml-1 {
@@ -274,6 +278,10 @@ a:hover{
 }
 
 .mb-1 {
+    margin-bottom: 0.5rem;
+}
+
+.mr-1 {
     margin-bottom: 0.5rem;
 }
 
@@ -369,6 +377,7 @@ a:hover{
 }
 
 .noticiaNueva{
+    position: relative;
     display: flex;
     padding-bottom: 1rem;
 }
@@ -386,11 +395,20 @@ a:hover{
 
 .lo_ultimo{
     padding-left: 1.5rem;
-    border-left: 2px dotted var(--borde);
+    border-left: 2px dashed var(--borde);
 }
 
 .lo_ultimo a{
     margin-left: 0.5rem;
+}
+
+.cuadrado_azul {
+    width: 0.375rem;
+    height: 0.375rem;
+    background-color: var(--primary);
+    position: absolute;
+    top: 40%; /* Ajusta la posición vertical */
+    left: -8.85%;
 }
 
 
