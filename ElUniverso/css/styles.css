@@ -1,6 +1,7 @@
 [data-theme="light"] {
     --primary: #0374BB;
     --background: #FFFFFF;
+    --background_videos: #37474F;
     --text: #000;
     --borde: #BBB;
     --white_text: #FFFFFF;
@@ -9,6 +10,7 @@
 }
 
 [data-theme="dark"] {
+    --background_videos: #37474F;
     --primary: #0374BB;
     --background: #000;
     --text: #FFFFFF;
@@ -49,7 +51,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0px;
     font-size: var(--text-size);
-
+    color: var(--text);
 }
 
 i{
@@ -378,7 +380,7 @@ a:hover{
 
 
 .noticiaDestacada img{
-    width: 8.0625rem;
+    width: 9.2rem;
     height: 6.125rem;
 }
 
@@ -425,6 +427,8 @@ a:hover{
 }
 
 .miniatura_video {
+    max-width: 100%; 
+    margin: 0 auto;
     position: relative;
     display: inline-block;
   }
@@ -442,13 +446,38 @@ a:hover{
   }
 
   .miniatura_video img {
-    width: 27.3125rem;
+    width: 28.5rem;
     height: 15.4375rem;
     display: block;
   }
 
+  .miniatura_video .segunda-imagen {
+    width: 19.4375rem;
+    height: 9rem;
+  }
+
   .light{
     font-weight: lighter;
+  }
+
+  .videos{
+    color: var(--white_text);
+   
+  }
+
+  .p-videos{
+    padding-left: 6.2rem;
+    padding-right: 2.5rem;    
+  }
+
+  .fondo-gris {
+    position: absolute;
+    bottom: 1;
+    right: 0;
+    width: 100%;
+    height: 40.8125rem;
+    background-color: var(--background_videos); /* Color de fondo gris */
+    z-index: -1; /* Asegura que esté detrás de otros elementos */
   }
 
 
