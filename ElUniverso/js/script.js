@@ -43,3 +43,25 @@ themeToggle.addEventListener('keydown', (event) => {
     }
 });
 
+const contenedor = document.querySelector('.contenedor');
+let isDragging = false;
+let startX;
+
+contenedor.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startX = e.clientX - contenedor.scrollLeft;
+});
+
+contenedor.addEventListener('mouseup', () => {
+  isDragging = false;
+});
+
+contenedor.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  const scrollX = e.clientX - startX;
+  contenedor.scrollLeft = scrollX;
+});
+
+contenedor.addEventListener('mouseleave', () => {
+  isDragging = false;
+});

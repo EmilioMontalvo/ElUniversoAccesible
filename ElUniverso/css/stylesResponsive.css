@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+    .barra_menu {
+        overflow-x: scroll;
+        white-space: nowrap;
+        width: 100%;
+        height: auto;
+        /* Cambiar a scroll horizontal en dispositivos móviles */
+    }
+
+    .menu {
+        width: 500rem;
+       
+    }
+
+    .menu {
+        width: 500rem;
+       
+    }
+
+    .body{
+        display: none;
+    }
+}
