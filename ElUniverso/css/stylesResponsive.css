@@ -7,6 +7,12 @@
         /* Cambiar a scroll horizontal en dispositivos móviles */
     }
 
+    
+
+    .boton{
+        border-radius: 5px;
+    }
+
     .menu {
         width: 500rem;
        
@@ -15,9 +21,68 @@
     .menu {
         width: 500rem;
        
+    }
+
+    .header1{
+        height: 5rem;
     }
 
     .body{
         display: none;
     }
+
+    .boton_registrarse{
+        display: none;
+    }
+
+    .barra_busqueda{
+        display: none;
+    }
+
+    .boton_iniciar_sesion{
+        width: 5.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .titulo1 {
+        margin-top: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .boton_menu{
+        
+        width: 2.3rem;
+        
+    }
+
+    .boton_menu span{
+        display: none;
+    }
+
+    .boton_iniciar_sesion{
+       margin-left: 0.5rem;
+       border-radius: 100%;
+       width: 3rem;
+       height: 3rem;
+    }
+
+    .boton_iniciar_sesion div{
+        display: none;
+     }
+
+    .p-edicion{
+        padding: 0;
+    }
+
+    .tamanio_fuente p{
+        display: none;
+    }
+
+    .header2{
+        margin-bottom: 0.5rem;
+    }
+
+    
+
 }

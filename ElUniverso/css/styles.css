@@ -113,6 +113,7 @@ p {
 
 
 .titulo1 {
+    
     color: var(--text);
     font-family: 'FuenteComercio';
     font-size: 4.5rem;
@@ -141,7 +142,13 @@ p {
 
 .grid3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.grid3R {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
@@ -185,7 +192,7 @@ p {
 .menu {
     width: 49.3125rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 50%;
 }
 
@@ -263,6 +270,7 @@ p {
     box-sizing: border-box;
     padding: 0px 0.2rem;
     font-size: var(--text-size);
+    
 
 }
 
@@ -533,12 +541,11 @@ h1 {
 /* cambio en el tamaño de la pantalla */ 
 @media screen and (max-width: 768px) {
 
-    .grid3 {
-        grid-template-columns: 1fr;
-    }
+    
 
-    .titulo1 {
-        font-size: 2.5rem;
+   
+    .subtitulo {
+       display: none;
     }
 
     .subtitulo {
