@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/f9e2e8e2a6.js" crossorigin="anonymous"></script>
     <script src="js/script.js" type="text/javascript" defer></script>
     <script src="js/aumentartexto.js" type="text/javascript" defer></script>
-
+    <script src="js/carrucel.js"></script>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
                         <div class="centrar">
                             <input class="input_lupa" type="text" tabindex="3" aria-label="barra de busqueda">
                         </div>
-                        <button class="lupa centrar">
+                        <button class="lupa centrar" tabindex="4" aria-label="precionar para buscar">
                             <i class="fa-solid fa-magnifying-glass" style="color: var(--text);"></i>
                         </button>
                     </div>
@@ -45,7 +45,7 @@
             <div>
                 <!--titulo-->
                 <div class="header1 contenido_block centrar_texto titulo_paguina pt-lg-2">
-                    <a href="index.html" tabindex="3">
+                    <a href="index.html">
                         <h1 class="titulo1 pt-1" tabindex="1">
                             EL UNIVERSO
                         </h1>
@@ -118,23 +118,23 @@
 
         <!--barra de menu-->
         <div class="centrar barra_menu contenedor_scroll">
-            <div class="menu menu_scroll">
+            <div class="menu menu_scroll" tabindex="13" aria-label="Barra de menú">
                 <a href="">
-                    <div class="centrar borde_gris">
+                    <div class="centrar borde_gris" tabindex="14">
                         Tendencias
                     </div>
                 </a>
-                <a href="">
+                <a href="" tabindex="15">
                     <div class="centrar borde_gris">
                         Sociedad
                     </div>
                 </a>
-                <a href="">
+                <a href="" tabindex="16">
                     <div class="centrar borde_gris">
                         Cultura
                     </div>
                 </a>
-                <a href="">
+                <a href="" tabindex="17">
                     <div class="centrar">
                         Deportes
                     </div>
@@ -155,11 +155,11 @@
                 <div class="centrar pl-3 pr-3">
                     <div>
                         <div class="grid_mitad">
-                            <div class="titulo">
+                            <div class="titulo" tabindex="18" aria-label="Seccion de Destacados">
                                 Destacados
                             </div>
                             <div class="derecha">
-                                <button class="boton boton_suscribete contenido_inline">
+                                <button class="boton boton_suscribete contenido_inline" tabindex="19">
                                     <i class="fa-solid fa-star" style="color: #26B6FD;"></i>
                                     <p class="">Suscríbete</p>
                                     
@@ -168,7 +168,7 @@
 
                         </div>
                         <!--carrucel-->
-                        <div class="carrucel">
+                        <div class="carrucel" tabindex="20" aria-label="carrucel">
                             <div id="carouselExampleIndicators" class="carousel slide mt-3" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -177,7 +177,7 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <a href="">
+                                        <a href="" tabindex="22">
                                             <img class="d-block w-100" src="imagenes/noticias/noticia1.png"
                                                 alt="Muerte de Fernando Villavicencio dividió a directivos de Gente Buena, ¿cuál es el futuro del movimiento?">
     
@@ -188,7 +188,7 @@
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <a href="">
+                                        <a href="" tabindex="22">
                                             <img class="d-block w-100" src="imagenes/noticias/noticia2.png"
                                                 alt="El 19 de septiembre será el examen de conocimientos para 103 candidatos a ser contralor del Estado">
                                             <div class="carousel-caption d-md-block">
@@ -201,7 +201,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <a href="">
+                                    <a href="" tabindex="22">
                                         <img class="d-block w-100" src="imagenes/noticias/noticia3.png"
                                             alt="Luis Rubiales anuncia su renuncia como presidente de la Federación Española de Fútbol">
     
@@ -212,15 +212,15 @@
                                     </a>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                                data-slide="prev">
+                            <a class="carousel-control-prev" tabindex="21" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev" >
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
+                                <span class="sr-only">Mostrar Previo</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            <a class="carousel-control-next" tabindex="23" href="#carouselExampleIndicators" role="button"
                                 data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
+                                <span class="sr-only">Mostrar Siguiente</span>
                             </a>
                         </div>
                         
@@ -428,7 +428,7 @@
 
                                 <div class="video_secundario_desc">
                                     <a href="">
-                                        la casa donde los
+                                            La casa donde los
                                         turistas crean sus propios
                                         instrumentos musicales
                                     </a>
@@ -507,7 +507,7 @@
         </div>
 
     </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
