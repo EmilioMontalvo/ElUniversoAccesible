@@ -25,11 +25,7 @@
 
     .header1{
         height: 5rem;
-    }
-
-    .body{
-        display: none;
-    }
+    }    
 
     .boton_registrarse{
         display: none;
@@ -82,6 +78,30 @@
     .header2{
         margin-bottom: 0.5rem;
     }
+
+    
+
+    .grid_mitad{
+        grid-template-columns: 1fr;
+    }
+
+    .grid5{
+        grid-template-columns: 1fr;
+    }
+
+    .body_noticias{
+        grid-template-columns: 1fr;
+    }
+
+    .noticiasDestacadas{
+        grid-template-columns: 1fr;
+    }
+
+    .video_principal{
+        display: inline-block;
+    }
+
+
 
     
 

@@ -173,6 +173,11 @@ p {
     grid-template-columns: 1fr 1fr;
 }
 
+.grid_opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 
 .contenido_inline * {
@@ -350,13 +355,7 @@ p {
 
 
 
-.carrucel {
-    border: 1px solid var(--borde);
-    width: 53.8125rem;
-    height: 26.75rem;
-    background: url(../imagenes/noticias/bosque.png), lightgray 50% / cover no-repeat;
 
-}
 
 .noticiaDestacadaDiv {}
 
@@ -522,6 +521,17 @@ h1 {
 
 .carousel-caption{
     background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 2.5rem;
+    position: absolute;
+    width: 97%;
+    left: 0.0;
+    bottom: 0;
+}
+
+.carousel-caption a{
+    color: var(--white_text);
     
 }
 
