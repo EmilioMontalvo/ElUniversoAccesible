@@ -80,12 +80,15 @@
     }
 
     
+    .boton_suscribete p{
 
-    .grid_mitad{
+    }
+    
+    .grid5{
         grid-template-columns: 1fr;
     }
 
-    .grid5{
+    .grid2{
         grid-template-columns: 1fr;
     }
 
@@ -100,6 +103,15 @@
     .video_principal{
         display: inline-block;
     }
+
+    .titulo{
+        font-size: 1.8rem;
+    }
+
+    .miniatura_video{
+        max-width: 90%;
+    }
+
 
 
 

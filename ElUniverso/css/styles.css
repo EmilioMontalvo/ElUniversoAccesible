@@ -102,6 +102,14 @@ p {
     margin: 0;
 }
 
+h1 {
+    font-size: calc(var(--tamanio-texto) * 10);
+}
+
+h2{
+    font-size: var(--text-size);
+}
+
 
 .titulo {
     font-family: Roboto Serif;
@@ -292,11 +300,11 @@ p {
 }
 
 .boton_iniciar_sesion {
-    width: 9rem;
+    width: 11rem;
 }
 
 .boton_suscribete {
-    width: 16.5rem;
+    width: auto;
 }
 
 
