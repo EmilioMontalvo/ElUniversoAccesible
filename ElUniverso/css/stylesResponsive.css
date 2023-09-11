@@ -81,11 +81,7 @@
         margin-bottom: 0.5rem;
     }
 
-    
-    .boton_suscribete p{
-
-    }
-    
+       
     .grid5{
         grid-template-columns: 1fr;
     }
@@ -136,6 +132,7 @@
     .alinear-derecha-s{
         justify-content: flex-end;
         margin-right: 1.5rem;
+        
     }
 
     .ancho1{
@@ -179,6 +176,11 @@
         padding-right: 1.5rem;
         text-align: justify;
     }
+
+    .destacados{
+        margin: 0px;
+    }
+
 
    
 
