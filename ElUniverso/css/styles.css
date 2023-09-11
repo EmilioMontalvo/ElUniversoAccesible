@@ -439,8 +439,6 @@ h2{
 
 
 
-
-
 .miniatura_video {
     max-width: 100%;
     margin: 0 auto;
@@ -546,7 +544,7 @@ h1 {
     padding-left: 1rem;
     padding-right: 2rem;
     padding-bottom: 2.5rem;
-    position: absolute;
+    
     width: 97%;
     left: 0.0;
     bottom: 0;

@@ -181,7 +181,17 @@
         margin: 0px;
     }
 
+    .carousel-caption h2{
+        font-size: calc(var(--text-size) * 0.8rem);
+        
+    }
 
+    .carousel-caption{
+       width: 90%;
+       height: 10%;
+       left: 0.0;
+       top: 0;
+    }
    
 
 
