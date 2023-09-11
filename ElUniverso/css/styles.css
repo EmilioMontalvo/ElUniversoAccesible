@@ -42,8 +42,16 @@
 
 :root {
     --altura: 2.1875rem;
-    --text-size: 1.1rem;
+    --text-size: 1.3rem;
 
+}
+
+@media screen and (max-width: 768px) {   
+    :root {
+        --altura: 2.1875rem;
+        --text-size: 1.1rem;
+    }
+    
 }
 
 
@@ -365,6 +373,8 @@ h2{
 
 
 
+
+
 .noticiaDestacadaDiv {}
 
 .noticiaDestacada {
@@ -389,8 +399,8 @@ h2{
 .noticiaNueva {
     position: relative;
     display: flex;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+    padding-bottom: 1.4rem;
+    padding-top: 1.4rem;
 }
 
 .noticiaNueva img {
@@ -541,6 +551,10 @@ h1 {
 .carousel-caption a{
     color: var(--white_text);
     
+}
+
+.border_top{
+    border-top: 1px dashed var(--borde);
 }
 
 
