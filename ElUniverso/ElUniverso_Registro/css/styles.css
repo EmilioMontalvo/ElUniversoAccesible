@@ -1,6 +1,8 @@
 [data-theme="light"] {
     --primary: #0374BB;
+    --primaryLogin: #0374BB;
     --background: #FFFFFF;
+    --darkerBackground: #ececec;
     --background_videos: #37474F;
     --text: #000;
     --borde: #BBB;
@@ -13,7 +15,9 @@
 [data-theme="dark"] {
     --background_videos: #232a2e;
     --primary: #0374BB;
-    --background: #000;
+    --primaryLogin: #151718;
+    --background: #151718;
+    --darkerBackground: #212425;
     --text: #e7e7e7;
     --borde: #a8a8a8a3;
     --white_text: #e7e7e7;
@@ -667,7 +671,7 @@ input:checked+.slider:before {
 /*registro login*/
 
 .padre-registro{
-    background-color: #0374BB;
+    background-color: var(--primaryLogin);
     display: flex;
     justify-content: space-between;
 }
@@ -727,12 +731,12 @@ input:checked+.slider:before {
 
 
 .registro-contenedor {
-    background-color: white;
+    background-color: var(--darkerBackground);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 400px;
-    /*max-width: 700px;*/
+    max-width: 400px;
     margin: 20px auto;
     text-align: left;
     flex: 85%;
@@ -765,8 +769,9 @@ input:checked+.slider:before {
     padding: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 1px solid #000;
+    border: 1px solid var(--text);
     border-radius: 5px;
+    background-color: var(--darkerBackground);
 }
 
 .campo input[type="checkbox"] {
@@ -792,6 +797,8 @@ input:checked+.slider:before {
 
 .boton-crear-cuenta:hover {
     background-color: #004E80;
+    color: white;
+    text-decoration: none;
 }
 
 .enlace-iniciar-sesion {
