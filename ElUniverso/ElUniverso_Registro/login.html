@@ -20,7 +20,7 @@
 
 <body>
     <!--header-->
-    <div>
+    <div role="banner">
         <div class="grid3 mb-1">
             <!--columna1-->
             <div class="centrar">
@@ -28,7 +28,7 @@
                 <div class="grid2 header1 centrar ">
                     <button class="boton boton_menu" tabindex="3">
                         <i class="fa-solid fa-bars" style="color: var(--white_text);"></i>
-                        <span>MENÚ</span>
+                        <span>Menú</span>
                     </button>
                     <!--barra de busqueda-->
                     <div class="grid2 centrar barra_busqueda">
@@ -36,7 +36,7 @@
                         <div class="centrar">
                             <input class="input_lupa" type="text" tabindex="3" aria-label="barra de busqueda">
                         </div>
-                        <button class="lupa centrar">
+                        <button class="lupa centrar" tabindex="4" aria-label="precionar para buscar">
                             <i class="fa-solid fa-magnifying-glass" style="color: var(--text);"></i>
                         </button>
                     </div>
@@ -48,7 +48,7 @@
             <div>
                 <!--titulo-->
                 <div class="header1 contenido_block centrar_texto titulo_paguina pt-lg-2">
-                    <a href="index.html" tabindex="3">
+                    <a href="../index.html">
                         <h1 class="titulo1 pt-1" tabindex="1">
                             EL UNIVERSO
                         </h1>
@@ -65,11 +65,11 @@
             <div class="centrar">
                 <!--Inicio de sesion y registro-->
                 <div class="grid_mitad header1 centrar">
-                    <button tabindex="4" class="boton grid2 centrar boton_iniciar_sesion">
+                    <button id="botonIniciarSesion" tabindex="4" class="boton grid2 centrar boton_iniciar_sesion">
                         <i class="fa-solid fa-user" style="color: var(--white_text);"></i>
                         <div class="ml-2">Iniciar Sesión</div>
                     </button>
-                    <button tabindex="5" class="boton boton_registrarse">
+                    <button id="botonRegistrarse" tabindex="5" class="boton boton_registrarse">
                         Registrarse
                     </button>
                 </div>
@@ -121,23 +121,23 @@
 
         <!--barra de menu-->
         <div class="centrar barra_menu contenedor_scroll">
-            <div class="menu menu_scroll">
+            <div class="menu menu_scroll" tabindex="13" aria-label="Barra de menú">
                 <a href="">
-                    <div class="centrar borde_gris">
+                    <div class="centrar borde_gris" tabindex="14">
                         Tendencias
                     </div>
                 </a>
-                <a href="">
+                <a href="" tabindex="15">
                     <div class="centrar borde_gris">
                         Sociedad
                     </div>
                 </a>
-                <a href="">
+                <a href="" tabindex="16">
                     <div class="centrar borde_gris">
                         Cultura
                     </div>
                 </a>
-                <a href="">
+                <a href="" tabindex="17">
                     <div class="centrar">
                         Deportes
                     </div>
@@ -149,10 +149,8 @@
     </div>
 
 
-    </div>
 
-
-    <!--registro-->
+    <!--login-->
 
 
     <div class="padre-registro">
@@ -163,7 +161,7 @@
             <!-- Contenedor superior con el logotipo -->
             <div class="logo-superior">
                 <!-- Botón para volver atrás -->
-                <a href="#" class="boton-volver">
+                <a href="../index.html" class="boton-volver">
                     <img src="imagenes/registro-login/x_icon.png" alt="Volver">
                 </a>
                 <!-- Tu imagen de logotipo va aquí -->
@@ -190,10 +188,10 @@
                         </label>
                     </div>
                     <div class="boton-registro">
-                        <a href="#" class="boton-crear-cuenta">Iniciar Sesión</a>
+                        <a href="../index.html" class="boton-crear-cuenta">Iniciar Sesión</a>
                     </div>
                 </form>
-                <p>No tengo una cuenta, <a href="#" class="enlace-iniciar-sesion">crea tu cuenta</a></p>
+                <p>No tengo una cuenta, <a href="./registro.html" class="enlace-iniciar-sesion">crea tu cuenta</a></p>
             </div>
         </div>
 
@@ -210,7 +208,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
+    <script src="js/carrucel.js"></script>
 
 
 </body>
