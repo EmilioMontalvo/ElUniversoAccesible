@@ -12,12 +12,12 @@
     <script src="https://kit.fontawesome.com/f9e2e8e2a6.js" crossorigin="anonymous"></script>
     <script src="js/script.js" type="text/javascript" defer></script>
     <script src="js/aumentartexto.js" type="text/javascript" defer></script>
-    <script src="js/carrucel.js"></script>
+
 </head>
 
 <body>
     <!--header-->
-    <div>
+    <div role="banner">
         <div class="grid3 mb-1">
             <!--columna1-->
             <div class="centrar">
@@ -25,11 +25,11 @@
                 <div class="grid2 header1 centrar ">
                     <button class="boton boton_menu" tabindex="3">
                         <i class="fa-solid fa-bars" style="color: var(--white_text);"></i>
-                        <span>MENÚ</span>
+                        <span>Menú</span>
                     </button>
                     <!--barra de busqueda-->
                     <div class="grid2 centrar barra_busqueda">
-                        
+
                         <div class="centrar">
                             <input class="input_lupa" type="text" tabindex="3" aria-label="barra de busqueda">
                         </div>
@@ -146,9 +146,9 @@
     </div>
 
 
-    </div>
+    
     <!--body noticias-->
-    <div class="centrar ">
+    <div class="centrar " role="body noticias">
         <div class="body body_noticias mt-3 pb-5 borde_inferior">
             <!--destacados-->
             <div class="pr-1 destacados">
@@ -162,13 +162,14 @@
                                 <button class="boton boton_suscribete contenido_inline" tabindex="19">
                                     <i class="fa-solid fa-star" style="color: #26B6FD;"></i>
                                     <p class="">Suscríbete</p>
-                                    
+
                                 </button>
                             </div>
 
                         </div>
                         <!--carrucel-->
-                        <div class="carrucel" tabindex="20" aria-label="carrucel">
+                        <div class="carrucel" tabindex="20"
+                            aria-label="carrucel de noticias destacadas, controlar con flechas del teclado">
                             <div id="carouselExampleIndicators" class="carousel slide mt-3" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -179,10 +180,12 @@
                                     <div class="carousel-item active">
                                         <a href="" tabindex="22">
                                             <img class="d-block w-100" src="imagenes/noticias/noticia1.png"
-                                                alt="Muerte de Fernando Villavicencio dividió a directivos de Gente Buena, ¿cuál es el futuro del movimiento?">
-    
+                                                alt="Imagen de una calle de quito con pancartas de la lista 25">
+
                                             <div class="carousel-caption d-md-block">
-                                                <h2>Muerte de Fernando Villavicencio dividió a directivos de Gente Buena,
+                                                <span aria-label="Titulo de noticia"></span>
+                                                <h2>Muerte de Fernando Villavicencio dividió a directivos de Gente
+                                                    Buena,
                                                     ¿cuál es el futuro del movimiento?</h5>
                                             </div>
                                         </a>
@@ -190,40 +193,44 @@
                                     <div class="carousel-item">
                                         <a href="" tabindex="22">
                                             <img class="d-block w-100" src="imagenes/noticias/noticia2.png"
-                                                alt="El 19 de septiembre será el examen de conocimientos para 103 candidatos a ser contralor del Estado">
+                                                alt="Imagen de Reunión para definir el examen de conocimientos para ser contralor del Estado">
                                             <div class="carousel-caption d-md-block">
-    
-                                                <h2>El 19 de septiembre será el examen de conocimientos para 103 candidatos
+                                                <span aria-label="Titulo de noticia"></span>
+                                                <h2>El 19 de septiembre será el examen de conocimientos para 103
+                                                    candidatos
                                                     a ser contralor del Estado
                                                     </h5>
                                         </a>
-    
+
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <a href="" tabindex="22">
                                         <img class="d-block w-100" src="imagenes/noticias/noticia3.png"
                                             alt="Luis Rubiales anuncia su renuncia como presidente de la Federación Española de Fútbol">
-    
+
                                         <div class="carousel-caption d-md-block">
+                                            <span aria-label="Titulo de noticia"></span>
                                             <h2>Luis Rubiales anuncia su renuncia como presidente de la Federación
                                                 Española de Fútbol</h5>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" tabindex="21" href="#carouselExampleIndicators" role="button"
-                                data-slide="prev" >
+                            <a id="miInput" class="carousel-control-prev" aria-keyshortcuts="ArrowRight" tabindex="21"
+                                role="button" data-slide="prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Mostrar Previo</span>
                             </a>
-                            <a class="carousel-control-next" tabindex="23" href="#carouselExampleIndicators" role="button"
-                                data-slide="next">
+                            <a class="carousel-control-next" tabindex="23" aria-keyshortcuts="ArrowRight" role="button"
+                                data-slide="next" href="#carouselExampleIndicators" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Mostrar Siguiente</span>
                             </a>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -234,16 +241,17 @@
                 <div class="centrar noticiaDestacadaDiv">
                     <div class="noticiaDestacada borde_gris">
                         <div class="centrar">
-                            <a href="">
+                            <a href="" tabindex="24">
                                 <img src="imagenes/noticias/noticia1.png"
-                                    alt="El campo Tiputini está fuera del Parque Nacional Yasuní, pero es parte del bloque 43 o ITT.">
-
+                                    alt="Imagen de una calle de quito con pancartas de la lista 25">
                             </a>
 
                         </div>
 
-                        <a href="noticia.html">Muerte de Fernando Villavicencio dividió a directivos de Gente Buena,
-                            ¿cuál es el futuro del movimiento?</a>
+                        <a href="" tabindex="25"><span aria-label="Titulo de noticia"></span>Muerte de Fernando
+                            Villavicencio dividió a directivos de Gente Buena,
+                            ¿cuál es el futuro del movimiento?
+                        </a>
 
                     </div>
                 </div>
@@ -251,14 +259,15 @@
                 <div class="centrar borde_gris noticiaDestacadaDiv">
                     <div class="noticiaDestacada">
                         <div class="centrar">
-                            <a href="">
+                            <a href="" tabindex="26">
                                 <img src="imagenes/noticias/noticia2.png"
-                                    alt="El campo Tiputini está fuera del Parque Nacional Yasuní, pero es parte del bloque 43 o ITT.">
+                                    alt="Imagen de Reunion para definir el examen de conocimientos para ser contralor del Estado">
 
                             </a>
 
                         </div>
-                        <a href="">El 19 de septiembre será el examen de conocimientos para 103 candidatos a ser
+                        <a href="" tabindex="27"><span aria-label="Titulo de noticia"></span>El 19 de septiembre será el
+                            examen de conocimientos para 103 candidatos a ser
                             contralor del Estado</a>
 
                     </div>
@@ -266,15 +275,16 @@
                 <div class="centrar noticiaDestacadaDiv">
                     <div class="noticiaDestacada">
                         <div class="centrar">
-                            <a href="">
+                            <a href="" tabindex="28">
                                 <img src="imagenes/noticias/noticia3.png"
-                                    alt="El campo Tiputini está fuera del Parque Nacional Yasuní, pero es parte del bloque 43 o ITT.">
+                                    alt="Imagen de Luis Rubiales en una conferencia">
 
                             </a>
 
                         </div>
-                        <a href="">Luis Rubiales anuncia su renuncia como presidente de la Federación Española de
-                            Fútbol</a>
+                        <a href="" tabindex="29"><span aria-label="Titulo de noticia"></span>Luis Rubiales anuncia su
+                            renuncia como presidente de la Federación Española de
+                            Fútbol en redes sociales</a>
 
                     </div>
                 </div>
@@ -283,19 +293,19 @@
         </div>
         <!--lo ultimo-->
         <div class="lo_ultimo">
-            <div class="titulo2">
+            <div class="titulo2" tabindex="29" aria-label="Seccion de lo ultimo">
                 Lo último
             </div>
             <div class="noticiaNueva borde_inferior border_top">
                 <div class="cuadrado_azul"></div>
-                <a href="" class="centrar">
-                    <img src="imagenes/noticias/noticia4.png"
-                        alt="El campo Tiputini está fuera del Parque Nacional Yasuní, pero es parte del bloque 43 o ITT.">
+                <a href="" class="centrar" tabindex="30">
+                    <img src="imagenes/noticias/noticia4.png" alt="Imagen de un frasco de fentanilo">
                 </a>
 
                 <div class="centrar">
                     <div>
-                        <a href="noticia.html">En dos meses habría disponibilidad de pruebas para detectar fentanilo
+                        <a href="noticia.html" tabindex="31"><span aria-label="Titulo de noticia"></span>En dos meses
+                            habría disponibilidad de pruebas para detectar fentanilo
                             en Guayaquil</a>
                         <p class="letra_gris">Hace 15 minutos</p>
                     </div>
@@ -303,14 +313,14 @@
             </div>
             <div class="noticiaNueva borde_inferior">
                 <div class="cuadrado_azul"></div>
-                <a href="" class="centrar">
-                    <img src="imagenes/noticias/noticia5.png"
-                        alt="El campo Tiputini está fuera del Parque Nacional Yasuní, pero es parte del bloque 43 o ITT.">
+                <a href="" class="centrar" tabindex="32">
+                    <img src="imagenes/noticias/noticia5.png" alt="Imagen de La isla Punta Capones">
                 </a>
 
                 <div class="centrar">
                     <div>
-                        <a href="noticia.html">Así es la pequeña isla de playa virgen que está entre Ecuador y Perú
+                        <a href="noticia.html" tabindex="33"><span aria-label="Titulo de noticia"></span>Así es la
+                            pequeña isla de playa virgen que está entre Ecuador y Perú
                         </a>
                         <p class="letra_gris">Hace 15 minutos</p>
                     </div>
@@ -319,14 +329,14 @@
             </div>
             <div class="noticiaNueva borde_inferior">
                 <div class="cuadrado_azul"></div>
-                <a href="" class="centrar">
-                    <img src="imagenes/noticias/noticia6.png"
-                        alt="El campo Tiputini está fuera del Parque Nacional Yasuní, pero es parte del bloque 43 o ITT.">
+                <a href="" class="centrar" tabindex="34">
+                    <img src="imagenes/noticias/noticia6.png" alt="Imagen del hogar de niño asesinado en Durán">
                 </a>
 
                 <div class="centrar">
                     <div>
-                        <a href="noticia.html">‘Estaban haciendo deberes’: niño de 5 años
+                        <a href="noticia.html" tabindex="35"><span aria-label="Titulo de noticia"></span>‘Estaban
+                            haciendo deberes’: niño de 5 años
                             fue asesinado dentro de su casa en Durán
                         </a>
                         <p class="letra_gris">Hace 15 minutos</p>
@@ -336,14 +346,14 @@
             </div>
             <div class="noticiaNueva borde_inferior">
                 <div class="cuadrado_azul"></div>
-                <a href="" class="centrar">
-                    <img src="imagenes/noticias/noticia7.png"
-                        alt="El campo Tiputini está fuera del Parque Nacional Yasuní, pero es parte del bloque 43 o ITT.">
+                <a href="" class="centrar" tabindex="36">
+                    <img src="imagenes/noticias/noticia7.png" alt="Imagen de futbolistas entrenando">
                 </a>
 
                 <div class="centrar">
                     <div>
-                        <a href="noticia.html">¿Alexander Domínguez, titular en Ecuador frente a Uruguay en la
+                        <a href="noticia.html" tabindex="37"><span aria-label="Titulo de noticia"></span>¿Alexander
+                            Domínguez, titular en Ecuador frente a Uruguay en la
                             eliminatoria sudamericana?
                         </a>
                         <p class="letra_gris">Hace 15 minutos</p>
@@ -353,33 +363,35 @@
             </div>
             <div class="noticiaNueva borde_inferior">
                 <div class="cuadrado_azul"></div>
-                <a href="" class="centrar">
-                    <img src="imagenes/noticias/noticia8.png"
-                        alt="El campo Tiputini está fuera del Parque Nacional Yasuní, pero es parte del bloque 43 o ITT.">
+                <a href="" class="centrar" tabindex="38">
+                    <img src="imagenes/noticias/noticia8.png" alt="Imagen de la selección venezolana">
                 </a>
 
                 <div class="centrar">
                     <div>
-                        <a href="noticia.html">Venezuela vs. Paraguay por las eliminatorias: horarios para ver en vivo
+                        <a href="noticia.html" tabindex="39"><span aria-label="Titulo de noticia"></span>Venezuela vs.
+                            Paraguay por las eliminatorias: horarios para ver en vivo
                         </a>
                         <p class="letra_gris">Hace 15 minutos</p>
                     </div>
 
                 </div>
             </div>
-            
+
         </div>
 
     </div>
     </div>
 
     <!--videos mas-->
-    <div class="centrar div-videos alinear-izquierda-s">
+    <div class="centrar div-videos">
         <div>
             <div class="ancho1">
                 <div class="body p-videos pt-2">
-                    <span class="borde_gris titulo light pr-2">Videos</span>
-                    <span class="ml-2 titulo light"><a href="" class="letra_gris">Mas..</a></span> </sapn>
+                    <span class="borde_gris titulo light pr-2" tabindex="40"
+                        aria-label="Sección de Noticias con Videos">Videos</span>
+                    <span class="ml-2 titulo light"><a href="" class="letra_gris" tabindex="41"
+                            aria-label="Seleccionar para mas videos">Mas..</a></span> </sapn>
                 </div>
             </div>
         </div>
@@ -393,20 +405,21 @@
                     <div class="fondo-gris"></div>
                     <div class="grid2 pt-1">
                         <div class="miniatura_video centrar">
-                            <a href="">
-                                <img src="/imagenes/videos/otavalo.png" alt="">
+                            <a href="aqui.html" tabindex="42"
+                                aria-label="Miniatura de video Observatorio Astronómico de Quito en su aniversario 150">
+                                <img src="/imagenes/videos/astronomo.jpg" alt="">
                                 <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                             </a>
 
                         </div>
 
                         <div class="video_principal">
-                            <a href="">
-                                <h1>Hotel Otavalo</h1>
-                                <h2 class="pr-4">Los ponchos, sombreros, artesanías y demás elementos de la cultura
-                                    indígena han
-                                    vuelto a
-                                    Otavalo en una ciudad turística para ecuatorianos y extranjeros</h2>
+                            <a href="" tabindex="42">
+                                <h1><span aria-label="Titulo de noticia"></span>Observatorio Astronómico de Quito
+                                    llega a sus 150 años de fundación</h1>
+                                <h2 class="pr-4">Una hermosa casa es rodeada por los jardines y frondosos árboles del
+                                    parque La Alameda,
+                                    los botes de su laguna artificial y los comerciantes son los que le dan</h2>
 
                             </a>
                             <p>Hace un mes</p>
@@ -418,17 +431,18 @@
                             <div class="video_secundario">
                                 <div class="centrar_texto">
                                     <div class="miniatura_video centrar mb-1">
-                                        <a href="">
+                                        <a href="" tabindex="43"
+                                            aria-label="Miniatura de video Casa museo donde los turistas crean sus instrumentos">
                                             <img class="segunda-imagen" src="/imagenes/videos/video1.png" alt="">
                                             <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                         </a>
-    
+
                                     </div>
-                                </div>                                
+                                </div>
 
                                 <div class="video_secundario_desc">
-                                    <a href="">
-                                            La casa donde los
+                                    <a href="" tabindex="44"><span aria-label="Titulo de noticia"></span>
+                                        La casa donde los
                                         turistas crean sus propios
                                         instrumentos musicales
                                     </a>
@@ -441,20 +455,21 @@
                             <div class="video_secundario">
                                 <div class="centrar_texto">
                                     <div class="miniatura_video centrar mb-1">
-                                        <a href="">
+                                        <a href="" tabindex="45"
+                                            aria-label="Miniatura de video Opinion de Moisés Caicedo sobre desempeño de Ecuador en el mundial">
                                             <img class="segunda-imagen" src="/imagenes/videos/video2.png" alt="">
                                             <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                         </a>
-    
+
                                     </div>
                                 </div>
                                 <div class="video_secundario_desc">
-                                    <a href="">
+                                    <a href="" tabindex="46"><span aria-label="Titulo de noticia"></span>
                                         Moisés Caicedo: ‘Ante Senegal faltó ambición y querer ganar el partido’
                                     </a>
                                     <p>Hace un mes</p>
                                 </div>
-                                
+
 
                             </div>
                         </div>
@@ -462,17 +477,18 @@
                             <div class="video_secundario">
                                 <div class="centrar_texto">
                                     <div class="miniatura_video centrar mb-1">
-                                        <a href="">
+                                        <a href="" tabindex="47"
+                                            aria-label="Miniatura de video Diego Almeida habla de su futuro en Europa">
                                             <img class="segunda-imagen" src="/imagenes/videos/video3.png" alt="">
                                             <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                         </a>
-    
+
                                     </div>
                                 </div>
 
                                 <div class="video_secundario_desc">
-                                    <a href="">
-                                        Diego Almeida habla de su futuro en Europa
+                                    <a href="" tabindex="48"><span aria-label="Titulo de noticia"></span>
+                                        Diego Almeida habla de su futuro en Europa y del aprendizaje con Xavi Hernández
                                     </a>
                                     <p>Hace un mes</p>
                                 </div>
@@ -483,16 +499,17 @@
                             <div class="video_secundario">
                                 <div class="centrar_texto">
                                     <div class="miniatura_video centrar mb-1">
-                                        <a href="">
+                                        <a href="" tabindex="49"
+                                            aria-label="Miniatura de video museo donde los títeres cobran vida ">
                                             <img class="segunda-imagen" src="/imagenes/videos/video4.png" alt="">
                                             <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                         </a>
-    
+
                                     </div>
                                 </div>
 
                                 <div class="video_secundario_desc">
-                                    <a href="">
+                                    <a href="" tabindex="50"><span aria-label="Titulo de noticia"></span>
                                         Los títeres cobran vida en un museo situado al pie del estero Salado
                                     </a>
                                     <p>Hace un mes</p>
@@ -507,7 +524,7 @@
         </div>
 
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -517,8 +534,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
-
+    <script src="js/carrucel.js"></script>
 
 </body>
 

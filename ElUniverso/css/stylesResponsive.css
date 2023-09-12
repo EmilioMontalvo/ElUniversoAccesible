@@ -153,6 +153,14 @@
         height: auto;
     }
 
+    .video_principal h1{
+        text-justify: newspaper;
+        padding-right: 1.4rem;
+    }
+
+    .video_principal h2{
+        text-justify: newspaper;
+    }
 
     .video_secundario_desc a{
         padding-left: 2rem;
