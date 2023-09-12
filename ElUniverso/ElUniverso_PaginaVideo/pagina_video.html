@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesResponsive.css">
+    <title>El Universo</title>
+    <script src="https://kit.fontawesome.com/f9e2e8e2a6.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" type="text/javascript" defer></script>
+    <script src="js/aumentartexto.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <!--header-->
+    <div role="banner">
+        <div class="grid3 mb-1">
+            <!--columna1-->
+            <div class="centrar">
+                <!--menu y barra de busqueda-->
+                <div class="grid2 header1 centrar ">
+                    <button class="boton boton_menu" tabindex="3">
+                        <i class="fa-solid fa-bars" style="color: var(--white_text);"></i>
+                        <span>Menú</span>
+                    </button>
+                    <!--barra de busqueda-->
+                    <div class="grid2 centrar barra_busqueda">
+
+                        <div class="centrar">
+                            <input class="input_lupa" type="text" tabindex="3" aria-label="barra de busqueda">
+                        </div>
+                        <button class="lupa centrar" tabindex="4" aria-label="precionar para buscar">
+                            <i class="fa-solid fa-magnifying-glass" style="color: var(--text);"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--columna2-->
+            <div>
+                <!--titulo-->
+                <div class="header1 contenido_block centrar_texto titulo_paguina pt-lg-2">
+                    <a href="index.html">
+                        <h1 class="titulo1 pt-1" tabindex="1">
+                            EL UNIVERSO
+                        </h1>
+                        <h2 class="subtitulo" tabindex="2">
+                            El Mayor Diario Nacional
+                        </h2>
+                    </a>
+
+                </div>
+
+
+            </div>
+            <!--columna3-->
+            <div class="centrar">
+                <!--Inicio de sesion y registro-->
+                <div class="grid_mitad header1 centrar">
+                    <button tabindex="4" class="boton grid2 centrar boton_iniciar_sesion">
+                        <i class="fa-solid fa-user" style="color: var(--white_text);"></i>
+                        <div class="ml-2">Iniciar Sesión</div>
+                    </button>
+                    <button tabindex="5" class="boton boton_registrarse">
+                        Registrarse
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="grid_opciones mb-1">
+            <!--columna1-->
+            <div class="centrar alinear-izquierda-s">
+
+                <!--cambiar tamaño de fuente-->
+                <div class="contenido_inline centrar header2 p-edicion tamanio_fuente">
+                    <p class="letra_gris ml-1" tabindex="7">
+                        Tamaño de Fuente:
+                    </p>
+                    <button tabindex="8" id="botonDisminuir" class="boton_fuente centrar ml-1"
+                        aria-label="disminuir tamaño de fuente">
+                        <i class="fa-solid fa-minus" style="color: var(--text);"></i>
+                    </button>
+                    <div class="cuadrado ml-1 centrar">
+                        A
+                    </div>
+                    <button tabindex="9" id="botonAumentar" class="boton_fuente ml-1 centrar"
+                        aria-label="aumentar tamaño de fuente">
+                        <i class="fa-solid fa-plus" style="color: var(--text);"></i>
+                    </button>
+
+                </div>
+            </div>
+            <!--columna2-->
+
+            <!--columna3-->
+            <div class="centrar alinear-derecha-s">
+
+                <!--Modo oscuro-->
+                <div class="header2 contenido_inline centrar p-edicion">
+                    <p class="letra_gris">Modo:</p>
+                    <!--slider-->
+                    <label class="switch ml-2">
+                        <input tabindex="12" type="checkbox" id="slider" class="theme-toggle" checked
+                            aria-label="Cambiar entre Modo Oscuro y Modo Claro">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <!--barra de menu-->
+        <div class="centrar barra_menu contenedor_scroll">
+            <div class="menu menu_scroll" tabindex="13" aria-label="Barra de menú">
+                <a href="">
+                    <div class="centrar borde_gris" tabindex="14">
+                        Tendencias
+                    </div>
+                </a>
+                <a href="" tabindex="15">
+                    <div class="centrar borde_gris">
+                        Sociedad
+                    </div>
+                </a>
+                <a href="" tabindex="16">
+                    <div class="centrar borde_gris">
+                        Cultura
+                    </div>
+                </a>
+                <a href="" tabindex="17">
+                    <div class="centrar">
+                        Deportes
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!--body noticias-->
+    <div class="centrar">
+        <div class="body body_noticias mt-2">
+            <!--videos-->
+            <div class="pr-2">
+                <div class="videos mb-2" tabindex="18">VIDEOS</div>
+                <div class="titulo_video mb-2" tabindex="19">El Observatorio Astronómico de Quito llega a sus 150 años de fundación</div>
+                <div class="parrafo mb-2" tabindex="20">Una hermosa casa es rodeada por los jardines y frondosos árboles del parque La Alameda, 
+                    los botes de su laguna artificial y los comerciantes son los que le dan</div>
+                <div class="fecha mb-2" tabindex="21">21 de junio, 2023 - 15h38</div>
+                <hr>
+                    <!--mas videos-->
+                    <div class="centrar">
+                    <iframe width="672" height="377" src="https://www.youtube.com/embed/_wsN1iVfXVk?si=1WQDMJfe4hcvEctY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="mtb-1" tabindex="22"></iframe>
+                    </div>
+                    
+                <hr>  
+            </div>
+            <!--lo ultimo-->
+            <div>
+                <div class="masvideos">
+                    Mas videos
+                </div>
+                <div class="lo_ultimo">
+                    <div class="noticiaNueva mt-1 borde_inferior">
+                        <div class="cuadrado_azul"></div>
+                        <img href="noticia.html" src="imagenes/videos/v1.png">
+                            <div>
+                                <a href="noticia.html" tabindex="23">El Observatorio Astronómico de 
+                                    Quito llega a sus 150 años de fundación</a>
+                                <p class="letra_gris">Hace 15 minutos</p>
+                            </div>
+                    </div>
+                    <div class="noticiaNueva mt-1 borde_inferior">
+                        <div class="cuadrado_azul"></div>
+                        <img src="imagenes/videos/v2.png">
+                            <div>
+                                <a href="noticia.html" tabindex="24">Altar por arrollados la mañana del 
+                                    domingo en Via a La Costa</a>
+                                <p class="letra_gris">Hace 40 minutos</p>
+                            </div>
+                    </div>
+                    <div class="noticiaNueva mt-1 borde_inferior">
+                        <div class="cuadrado_azul"></div>
+                        <img src="imagenes/videos/v3.png"
+                            alt="El campo Tiputini está fuera del Parque Nacional Yasuní, pero es parte del bloque 43 o ITT.">
+                            <div>
+                                <a href="noticia.html" tabindex="25">Neisi Dajomes gana medalla de 
+                                    oro en Grand Prix de La Habana</a>
+                                <p class="letra_gris">Hace 1 hora</p>
+                            </div>
+                    </div>
+                    <div class="noticiaNueva mt-1">
+                        <div class="cuadrado_azul"></div>
+                        <img src="imagenes/videos/v4.png"
+                            alt="El campo Tiputini está fuera del Parque Nacional Yasuní, pero es parte del bloque 43 o ITT.">
+                            <div>
+                                <a href="noticia.html" tabindex="26">Habitantes de Pomasqui reclaman por 
+                                    una casa abandonada que atrae indigentes e inseguridad</a>
+                                <p class="letra_gris">Hace 2 horas</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="mtb-1">
+                    <button class="boton" tabindex="27">
+                        Ver todo
+                    </button>
+                </div>                    
+            </div>  
+    
+        </div>
+    </div>
+
+    <div class="centrar">
+        <div class="footer">
+            <!-- Columna 1 -->
+            <div class="footer-column">
+                <div>
+                    <div class="el-universo" tabindex="51" aria-label="Redes sociales del universo" role="heading" aria-level="1">EL UNIVERSO</div>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook mr-10px" aria-label="Facebook" tabindex="29"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter mr-10px" aria-label="Twitter" tabindex="30"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube mr-10px" aria-label="YouTube" tabindex="31"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram mr-10px" aria-label="Instagram" tabindex="32"></i></a>
+                        <a href=""><i class="fa-brands fa-soundcloud mr-10px" aria-label="Soundcloud" tabindex="33"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin mr-10px" aria-label="LinkedIn" tabindex="34"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="footer-column">
+                <div class="column-title" tabindex="52">Compañía</div>
+                <div class="column-text mb-2" tabindex="53">
+                    <a href="">Trabaja con nosotros </a>
+                </div>
+                <div class="column-text mb-2" tabindex="54">
+                    <a href="">Quiénes somos </a>
+                </div>
+                <div class="column-text" tabindex="55">
+                    <a href="">Código deontológico </a>
+                </div>
+            </div>
+
+            <!-- Columna 3 -->
+            <div class="footer-column">
+                <div class="column-title" tabindex="56">Ayuda / Asistencia</div>
+                <div class="column-text mb-2" tabindex="57">
+                    <a href="">Contáctenos</a>
+                </div>
+                <div class="column-text mb-2" tabindex="58">
+                    <a href="">Suscripciones</a>
+                </div>
+                <div class="column-text mb-2" tabindex="59">
+                    <a href="">Publicidad</a>
+                </div>
+            </div>
+
+            <!-- Columna 4 -->
+
+            <div class="footer-column">
+                <div class="column-title" tabindex="60">Nuestras marcas</div>
+                <div class="column-text mb-2" tabindex="61">
+                    <a href="">Quiosco Digital El Universo</a>
+                </div>
+                <div class="column-text mb-2" tabindex="62">
+                    <a href="">Full Clasificados</a>
+                </div>
+                <div class="column-text mb-2" tabindex="63">
+                    <a href="">Dr. Tecno</a>
+                </div>
+                <div class="column-text mb-2" tabindex="64">
+                    <a href="">La Revista</a>
+                </div>
+                <div class="column-text mb-2" tabindex="65">
+                    <a href="">Súper</a>
+                </div>
+                <div class="column-text mb-2" tabindex="66">
+                    <a href="">Radio City</a>
+                </div>
+                <div class="column-text mb-2" tabindex="67">
+                    <a href="">El Club</a>
+                </div>
+                <div class="column-text mb-2" tabindex="68">
+                    <a href="">Colecciones</a>
+                </div>
+                <div class="column-text mb-2" tabindex="68">
+                    <a href=""> Sambo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/carrucel.js"></script>
+
+</body>
+
+</html>
