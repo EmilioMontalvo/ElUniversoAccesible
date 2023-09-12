@@ -600,6 +600,10 @@ h1 {
     font-size: 16px;
 }
 
+.titulo_paguina *:hover{
+    text-decoration: none;
+}
+
 
 
 @media screen and (max-width: 1500px) {
@@ -690,4 +694,51 @@ input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
+}
+
+.footer {
+    background-color: #263238;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex; /* Utiliza flexbox para colocar las columnas en fila */
+    width: 100%;
+    padding-left: 3rem;
+    
+}
+
+.footer a{
+    color: var(--white_text);
+    
+}
+
+
+/* Estilos para las columnas del footer */
+.footer-column {
+    width: 25%;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilos para las columnas del footer */
+.footer-column {
+    width: 25%;
+    padding: 10px;
+    text-align: left;
+}
+
+
+/* Estilos para los títulos y textos de las otras columnas */
+.column-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: calc(var(--text-size) * 1rem);
+}
+
+.column-text {    
+    font-size: calc(var(--text-size) * 1rem);
+}
+
+.mb-2 {
+    margin-bottom: 1.5rem;
 }
