@@ -66,3 +66,4 @@ contenedor.addEventListener('mouseleave', () => {
   isDragging = false;
 });
 
+
