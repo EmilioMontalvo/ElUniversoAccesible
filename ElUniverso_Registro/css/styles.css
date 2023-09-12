@@ -70,7 +70,9 @@ body * {
     box-sizing: content-box;
 }
 
-
+body .registro-contenedor{
+    font-family: 'Lato', sans-serif;
+}
 
 
 i {
@@ -81,14 +83,14 @@ a {
     text-decoration: none;
 }
 
-a:visited {
+/*a:visited {
     color: var(--text);
-}
+}*/
 
-a:hover {
+/*a:hover {
     color: var(--anchor_hoover);
     text-decoration: none;
-}
+}*/
 
 button:hover {
     cursor: pointer;
@@ -288,9 +290,6 @@ h2{
 
 }
 
-.barra_busqueda{
-    
-}
 
 .boton {
     width: auto;
@@ -356,7 +355,6 @@ h2{
 .body {
     padding-right: 2.75rem;
     padding-left: 0.00rem;
-
 
 }
 
