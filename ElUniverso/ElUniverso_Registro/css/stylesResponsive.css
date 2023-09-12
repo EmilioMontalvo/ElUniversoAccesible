@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-    
+
 
     .barra_menu {
         overflow-x: scroll;
@@ -7,35 +7,35 @@
         width: 100%;
         height: auto;
         /* Cambiar a scroll horizontal en dispositivos móviles */
-    }    
+    }
 
-    .boton{
+    .boton {
         border-radius: 5px;
     }
 
     .menu {
         width: 500rem;
-       
+
     }
 
     .menu {
         width: 500rem;
-       
+
     }
 
-    .header1{
+    .header1 {
         height: 5rem;
-    }    
+    }
 
-    .boton_registrarse{
+    .boton_registrarse {
         display: none;
     }
 
-    .barra_busqueda{
+    .barra_busqueda {
         display: none;
     }
 
-    .boton_iniciar_sesion{
+    .boton_iniciar_sesion {
         width: 5.5rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
@@ -46,115 +46,116 @@
         font-size: 2rem;
     }
 
-    .boton_menu{
-        
+    .boton_menu {
+
         width: 2.5rem;
-       height: 2.5rem;
+        height: 2.5rem;
         box-sizing: border-box;
     }
 
-    .boton_menu span{
+    .boton_menu span {
         display: none;
-        
+
     }
 
-    .boton_iniciar_sesion{
-       margin-left: 0.5rem;
-       box-sizing: border-box;
-       width: 2.5rem;
-       height: 2.5rem;
+    .boton_iniciar_sesion {
+        margin-left: 0.5rem;
+        box-sizing: border-box;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
-    .boton_iniciar_sesion div{
+    .boton_iniciar_sesion div {
         display: none;
-     }
+    }
 
-    .p-edicion{
+    .p-edicion {
         padding: 0;
     }
 
-    .tamanio_fuente p{
+    .tamanio_fuente p {
         display: none;
     }
 
-    .header2{
+    .header2 {
         margin-bottom: 0.5rem;
     }
 
-       
-    .grid5{
+
+    .grid5 {
         grid-template-columns: 1fr;
     }
 
-    .grid2{
+    .grid2 {
         grid-template-columns: 1fr;
     }
 
-    .body_noticias{
+    .body_noticias {
         grid-template-columns: 1fr;
     }
 
-    .noticiasDestacadas{
+    .noticiasDestacadas {
         grid-template-columns: 1fr;
     }
 
-    .video_principal{
+    .video_principal {
         display: inline-block;
     }
 
-    .titulo{
+    .titulo {
         font-size: 1.8rem;
     }
 
-    .miniatura_video{
+    .miniatura_video {
         max-width: 90%;
     }
 
-    .body{
+    .body {
         padding-right: 0px;
     }
 
 
 
-    .noticiaDestacada{
+    .noticiaDestacada {
         border-bottom: 1px dashed var(--borde);
         padding-bottom: 0.5rem;
         padding-top: 0.5rem;
     }
 
-    
 
-    .alinear-izquierda-s{
+
+    .alinear-izquierda-s {
         justify-content: flex-start;
         margin-left: 1.5rem;
     }
 
-    .alinear-derecha-s{
+    .alinear-derecha-s {
         justify-content: flex-end;
         margin-right: 1.5rem;
-        
+
     }
 
-    .ancho1{
+    .ancho1 {
         width: auto;
     }
-    .p-videos{
+
+    .p-videos {
         padding-left: 0;
     }
 
-    .miniatura_video img{
+    .miniatura_video img {
         width: 100%;
         height: 100%;
     }
 
-    .video_principal{
+    .video_principal {
         padding-top: 1rem;
         padding-right: 1rem;
         height: auto;
     }
 
 
-    .video_secundario_desc a{
+    .video_secundario_desc a {
         padding-left: 2rem;
         padding-right: 2rem;
         font-weight: lighter;
@@ -166,37 +167,76 @@
         color: #a8a8a8;
     }
 
- 
-    .noticiaNueva{
+
+    .noticiaNueva {
         padding-right: 1.5rem;
 
     }
 
-    .noticiaNueva a{
+    .noticiaNueva a {
         padding-right: 1.5rem;
         text-align: justify;
     }
 
-    .destacados{
+    .destacados {
         margin: 0px;
     }
 
-    .carousel-caption h2{
+    .carousel-caption h2 {
         font-size: calc(var(--text-size) * 0.8rem);
-        
+
     }
 
-    .carousel-caption{
-       width: 90%;
-       height: 10%;
-       left: 0.0;
-       top: 0;
+    .carousel-caption {
+        width: 90%;
+        height: 10%;
+        left: 0.0;
+        top: 0;
     }
-   
 
 
 
+
+
+
+
+}
+
+/*registro responsive*/
+
+@media screen and (max-width: 768px) {
+    .padre-registro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-izquierda {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .registro-derecha {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .registro-contenedor {
+        width: 80%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .logo-superior {
+        width: 100%;
+        max-width: 100%;
+    }
 
     
+
+
+
 
 }
